@@ -19,6 +19,7 @@ public class VehicleController {
     @Autowired
     private Tyres tyres;
 
+    // checks
     @GetMapping("/rotateVehicle")
     public ResponseEntity<String> rotateVehicle() {
         return new ResponseEntity<>(tyres.rotate(), HttpStatus.ACCEPTED);
